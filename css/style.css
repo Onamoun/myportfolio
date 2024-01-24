@@ -618,7 +618,6 @@ header {
   inset: -25px -15px;
   border-color: var(--liver-chestunut);
 }
-
 /*
 .portfolio-carousel {
   position: relative;
@@ -643,20 +642,32 @@ header {
   height: auto;
   overflow: hidden;
   margin-bottom: 30px;
+}*/
+
+.portfolio-carousel-card .card-body p {
+  color: #ffffff; /* Couleur du texte en blanc */
+  font-size: 50px;
+  margin: auto;
+  letter-spacing: 0.0015em;
+  text-shadow: 0 1px #007bff, -1px 0 #8da1ff, -1px 2px #007bff, -2px 1px #8da1ff, -2px 3px #007bff, -3px 2px #8da1ff, -3px 4px #007bff, -4px 3px #8da1ff, -4px 5px #007bff, -5px 4px #8da1ff, -5px 6px #007bff, -6px 5px #8da1ff, -6px 7px #007bff, -7px 6px #8da1ff, -7px 8px #007bff, -8px 7px #8da1ff;
+  text-align: center;
+  animation: bounce 1s infinite alternate;
 }
 
-.portfolio-carousel-card .card-head img {
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.portfolio-carousel-card .card-head video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.portfolio-carousel-card .card-body p {
-  color: var(--battleship-gray);
-  font-size: var(--fs-5);
-  margin-bottom: 5px;
-}
 
+/*
 .portfolio-carousel-card .card-body a {
   color: var(--gainsboro);
   font-size: var(--fs-3);
