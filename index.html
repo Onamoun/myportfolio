@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onamoun Oguira Konan Gaël — Développeur d'Applications Full-Stack | Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio de Onamoun Oguira Konan Gaël, développeur d'applications full-stack (Web, Desktop, Mobile) et assistant IT : Laravel, Windev, Power BI, support helpdesk. Basé à Koumassi, Côte d'Ivoire.">
+  <meta name="author" content="Onamoun Oguira Konan Gaël">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Onamoun Oguira Konan Gaël — Développeur d'Applications Full-Stack">
+  <meta property="og:description" content="Applications web, desktop et mobiles robustes — et un support IT de confiance. Laravel · Windev · Power BI.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/icon32.ico">
+  <meta name="theme-color" content="#080b18">
+
+  <!-- Favicon -->
+   <link rel="shortcut icon" href="assets/images/icon32.ico" type="image/x-icon">
+
+  <!-- Données structurées JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Onamoun Oguira Konan Gaël",
+    "jobTitle": "Développeur d'Applications Full-Stack & Assistant IT",
+    "description": "Développeur d'applications full-stack (Web, Desktop, Mobile) et assistant IT : Laravel, Windev, Power BI, support helpdesk.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Koumassi", "addressCountry": "CI" },
+    "knowsAbout": ["PHP", "Laravel", "Windev", "VB.Net", "JavaScript", "Power BI", "Excel", "SQL Server", "Support IT"]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 + Bootstrap Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Style principal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#apropos">Aller au contenu principal</a>
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ================================ NAVBAR ================================ -->
+  <nav class="navbar navbar-expand-lg navbar-custom" id="navbar" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand" href="#accueil" aria-label="Accueil — Portfolio">OG<span class="brand-dot">.dev</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon-custom" aria-hidden="true"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 nav-actions-mobile">
+          <a class="nav-social" data-personal="github" href="https://github.com/Onamoun" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a class="nav-social" data-personal="phone" href="tel:+2250141099793" aria-label="Appeler par téléphone"><i class="bi bi-telephone"></i></a>
+          <a class="nav-social" data-personal="linkedin" href="https://www.linkedin.com/in/gaël-onamoun-b89612255" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activer le mode clair"><i class="bi bi-sun"></i></button>
+          <a class="btn btn-cv" data-personal="cv" href="assets/documents/CV.pdf" download><i class="bi bi-download me-1"></i> CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ================================ HERO ================================ -->
+    <header class="hero" id="accueil">
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-9 col-xl-8">
+            <span class="hero-badge hero-anim"><span class="pulse-dot" aria-hidden="true"></span><span data-personal="availability">Ouvert aux opportunités · Missions &amp; CDI</span></span>
+            <p class="hero-greeting hero-anim">Bonjour, je suis</p>
+            <h1 class="hero-name hero-anim" data-personal="fullName">Onamoun Oguira Konan Gaël</h1>
+            <p class="hero-role hero-anim"><span id="role-rotator">Développeur d'Applications Full-Stack</span><span class="role-caret" aria-hidden="true"></span></p>
+            <p class="hero-tagline hero-anim" data-personal="tagline">Des applications web, desktop et mobiles robustes — et un support IT de confiance.</p>
+            <p class="hero-tagline hero-anim" data-personal="bio">Développeur d'applications full-stack (Web, Desktop, Mobile) et Assistant IT, titulaire d'une Licence Professionnelle Réseaux &amp; Génie Logiciel.</p>
+
+            <div class="hero-cta d-flex flex-wrap gap-3 mt-4 hero-anim">
+              <a href="#projets" class="btn btn-primary-custom"><i class="bi bi-grid-1x2 me-2"></i>Voir mes projets</a>
+              <a href="#contact" class="btn btn-outline-custom"><i class="bi bi-envelope me-2"></i>Me contacter</a>
+            </div>
+
+            <div class="hero-socials hero-anim">
+              <a class="nav-social" data-personal="github" href="https://github.com/Onamoun" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a class="nav-social" data-personal="phone" href="tel:+2250141099793" aria-label="Appeler par téléphone"><i class="bi bi-telephone"></i></a>
+              <a class="nav-social" data-personal="linkedin" href="https://www.linkedin.com/in/gaël-onamoun-b89612255" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a class="nav-social" data-personal="email" href="mailto:onamoungael@gmail.com" aria-label="Envoyer un e-mail"><i class="bi bi-envelope"></i></a>
+              <a class="nav-social" data-personal="whatsapp" href="https://wa.me/2250747085276/?text=Bonjour,%20comment%20allez-vous%20%3F" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="mouse"></div>
+        <span>Scroll</span>
+      </div>
+    </header>
+
+    <!-- ============================== À PROPOS ============================== -->
+    <section class="section" id="apropos" aria-labelledby="apropos-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">À propos</span>
+          <h2 class="section-title" id="apropos-title">Développeur polyvalent &amp; support IT rigoureux</h2>
+          <p class="section-subtitle">Expérience en entreprise, sens du service et goût du travail bien fait.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 reveal reveal-left">
+            <div class="about-card">
+              <div class="avatar-wrap" aria-hidden="true">
+                  <img 
+                      src="assets/images/Me.png" 
+                      alt="Photo de profil"
+                      style="width: 142px;height: 142px;object-fit: cover;border-radius: 50%;display: block;"
+                  >
+              </div>
+              <h3 class="about-name" data-personal="fullName">Onamoun Oguira Konan Gaël</h3>
+              <p class="about-role" data-personal="role">Développeur d'Applications Full-Stack &amp; Assistant IT</p>
+              <ul class="about-meta">
+                <li><span class="status-dot" aria-hidden="true"></span><span data-personal="availability">Ouvert aux opportunités · Missions &amp; CDI</span></li>
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span data-personal="location">Koumassi, Côte d'Ivoire</span></li>
+                <li><i class="bi bi-envelope" aria-hidden="true"></i><a data-personal="email" href="mailto:onamoungael@gmail.com">onamoungael@gmail.com</a></li>
+                <li><i class="bi bi-telephone" aria-hidden="true"></i><a data-personal="phone" href="tel:+2250141099793">(+225) 01-41-09-97-93</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-8 reveal reveal-right">
+            <h3 class="h4 fw-bold mb-3">Qui suis-je ?</h3>
+            <p class="text-secondary-emphasis" data-personal="bio">Développeur d'applications full-stack (Web, Desktop, Mobile) et Assistant IT, titulaire d'une Licence Professionnelle Réseaux &amp; Génie Logiciel (Pigier Côte d'Ivoire).</p>
+            <p class="text-secondary-emphasis" data-personal="philosophy">Ma philosophie : des solutions utiles et fiables, un code propre et un support attentif.</p>
+
+            <h4 class="h5 fw-bold mt-4 mb-2">Domaines d'expertise</h4>
+            <div class="expertise-tags">
+              <span class="expertise-tag">Applications Web</span>
+              <span class="expertise-tag">Laravel &amp; PHP</span>
+              <span class="expertise-tag">ASP.Net &amp; C#</span>
+              <span class="expertise-tag">Windev &amp; VB.Net</span>
+              <span class="expertise-tag">Windev Mobile &amp; Dart</span>
+              <span class="expertise-tag">Power BI &amp; Excel</span>
+              <span class="expertise-tag">Support IT &amp; Helpdesk</span>
+              <span class="expertise-tag">Bases de données</span>
+              <span class="expertise-tag">Intégration Web</span>
+            </div>
+
+            <div class="row g-3 mt-3">
+              <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-value" data-count="3" data-suffix="+">0+</div><div class="stat-label">Années d'expérience</div></div></div>
+              <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-value" data-count="10" data-suffix="+">0+</div><div class="stat-label">Projets réalisés</div></div></div>
+              <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-value" data-count="20" data-suffix="+">0+</div><div class="stat-label">Technologies</div></div></div>
+              <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-value" data-count="4" data-suffix="">0</div><div class="stat-label">Entreprises</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ COMPÉTENCES ============================= -->
+    <section class="section section-alt" id="competences" aria-labelledby="competences-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-kicker">Compétences</span>
+          <h2 class="section-title" id="competences-title">Expertise technique full-stack</h2>
+          <p class="section-subtitle">Du Web au Mobile en passant par le Desktop, de la donnée au support : une palette complète.</p>
+        </div>
+        <div class="row g-4" id="skills-container"><!-- Généré par data.js --></div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPÉRIENCE ============================== -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-kicker">Parcours</span>
+          <h2 class="section-title" id="experience-title">Expérience professionnelle</h2>
+          <p class="section-subtitle">Quatre missions en entreprise, entre développement et support IT.</p>
+        </div>
+        <div class="timeline" id="timeline"><!-- Généré par data.js --></div>
+      </div>
+    </section>
+
+    <!-- ============================== PROJETS =============================== -->
+    <section class="section section-alt" id="projets" aria-labelledby="projets-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-kicker">Réalisations</span>
+          <h2 class="section-title" id="projets-title">Projets sélectionnés</h2>
+          <p class="section-subtitle">Des projets menés en entreprise — cliquez pour le détail technique.</p>
+        </div>
+        <div class="filter-bar reveal" id="project-filters" role="group" aria-label="Filtrer les projets"><!-- Généré par data.js --></div>
+        <div class="row g-4" id="projects-grid"><!-- Généré par data.js --></div>
+      </div>
+    </section>
+
+    <!-- ============================== SERVICES ============================== -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-kicker">Services</span>
+          <h2 class="section-title" id="services-title">Ce que je peux faire pour vous</h2>
+          <p class="section-subtitle">Des prestations cadrées, livrées avec rigueur et suivi.</p>
+        </div>
+        <div class="row g-4" id="services-container"><!-- Généré par data.js --></div>
+      </div>
+    </section>
+
+    <!-- ============================ TECHNOLOGIES ============================ -->
+    <section class="section section-alt" id="technologies" aria-labelledby="tech-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-kicker">Stack</span>
+          <h2 class="section-title" id="tech-title">Technologies pratiquées</h2>
+          <p class="section-subtitle">Les outils que j'utilise pour concevoir, développer et dépanner.</p>
+        </div>
+        <div class="tech-grid" id="tech-grid"><!-- Généré par data.js --></div>
+      </div>
+    </section>
+
+    <!-- =========================== CERTIFICATIONS =========================== -->
+    <section class="section" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-kicker">Formation</span>
+          <h2 class="section-title" id="certifications-title">Diplômes &amp; certifications</h2>
+          <p class="section-subtitle">Licence Pro, BTS, MOS Excel et formation continue.</p>
+        </div>
+        <div class="row g-4" id="certifications-container"><!-- Généré par data.js --></div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT =============================== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-kicker">Contact</span>
+          <h2 class="section-title" id="contact-title">Contactez-moi pour donner vie à votre projet</h2>
+          <p class="section-subtitle">Réponse sous 24h ouvrées, disponible à distance</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-5 reveal reveal-left">
+            <div class="contact-info-card">
+              <h3 class="h5 fw-bold mb-4">Coordonnées</h3>
+              <div class="contact-item">
+                <span class="contact-item-icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+                <div><div class="contact-item-label">E-mail</div><div class="contact-item-value"><a data-personal="email" href="mailto:onamoungael@gmail.com">onamoungael@gmail.com</a></div></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon"><i class="bi bi-telephone" aria-hidden="true"></i></span>
+                <div><div class="contact-item-label">Téléphone</div><div class="contact-item-value"><a data-personal="phone" href="tel:+2250141099793">(+225) 01-41-09-97-93</a></div></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon"><i class="bi bi-phone" aria-hidden="true"></i></span>
+                <div><div class="contact-item-label">Mobile 2</div><div class="contact-item-value"><a data-personal="phone2" href="tel:+2250102321239">(+225) 01-02-32-12-39</a></div></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon whatsapp"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+                <div><div class="contact-item-label">WhatsApp</div><div class="contact-item-value"><a data-personal="whatsapp" href="https://wa.me/2250141099793" target="_blank" rel="noopener">Discuter directement <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a></div></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+                <div><div class="contact-item-label">Localisation</div><div class="contact-item-value" data-personal="location">Koumassi, Côte d'Ivoire</div></div>
+              </div>
+              <div class="contact-item mb-0">
+                <span class="contact-item-icon"><i class="bi bi-share" aria-hidden="true"></i></span>
+                <div>
+                  <div class="contact-item-label">Réseaux</div>
+                  <div class="d-flex gap-2 mt-2">
+                    <a class="nav-social" data-personal="github" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a class="nav-social" data-personal="phone" href="tel:+2250141099793" aria-label="Appeler par téléphone"><i class="bi bi-telephone"></i></a>
+                    <a class="nav-social" data-personal="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 reveal reveal-right">
+            <div class="contact-form-card">
+              <div id="form-alert" class="d-none mb-3"></div>
+              <form id="contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="contact-name">Nom *</label>
+                    <input type="text" class="form-control form-control-custom" id="contact-name" name="name"
+                           placeholder="Votre nom" autocomplete="name" required>
+                    <div class="invalid-feedback">Veuillez indiquer votre nom.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="contact-email">E-mail *</label>
+                    <input type="email" class="form-control form-control-custom" id="contact-email" name="email"
+                           placeholder="vous@exemple.com" autocomplete="email" required>
+                    <div class="invalid-feedback">Veuillez saisir un e-mail valide.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="contact-subject">Sujet *</label>
+                    <input type="text" class="form-control form-control-custom" id="contact-subject" name="subject"
+                           placeholder="Objet de votre message" required>
+                    <div class="invalid-feedback">Veuillez indiquer un sujet.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="contact-message">Message *</label>
+                    <textarea class="form-control form-control-custom" id="contact-message" name="message" rows="5"
+                              placeholder="Décrivez votre projet ou votre besoin (10 caractères minimum)" required></textarea>
+                    <div class="invalid-feedback">Votre message doit contenir au moins 10 caractères.</div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-custom btn-submit" id="contact-submit">
+                      <i class="bi bi-send me-2"></i>Envoyer le message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================ FOOTER ================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <div class="footer-brand">OG<span class="brand-dot">.dev</span></div>
+          <p class="footer-role" data-personal="role">Développeur d'Applications Full-Stack &amp; Assistant IT</p>
+          <p class="footer-desc" data-personal="tagline">Des applications web, desktop et mobiles robustes — et un support IT de confiance.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a class="nav-social" data-personal="github" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a class="nav-social" data-personal="phone" href="tel:+2250141099793" aria-label="Appeler par téléphone"><i class="bi bi-telephone"></i></a>
+            <a class="nav-social" data-personal="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="nav-social" data-personal="email" href="mailto:onamoungael@gmail.com" aria-label="E-mail"><i class="bi bi-envelope"></i></a>
+            <a class="nav-social" data-personal="whatsapp" href="https://wa.me/2250141099793" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projets">Projets</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h3 class="footer-title">Ressources</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a data-personal="cv" href="assets/documents/CV.pdf" download>Télécharger le CV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> <span data-personal="fullName">Onamoun Oguira Konan Gaël</span>. Tous droits réservés.</span>
+        <span>HTML, CSS, JavaScript &amp; Bootstrap.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ MODAL PROJET ============================== -->
+  <div class="modal fade" id="project-modal" tabindex="-1" aria-labelledby="project-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="project-category position-static" id="modal-category">Web</span>
+            <h3 class="modal-title fw-bold mt-2" id="project-modal-label">Projet</h3>
+          </div>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Fermer"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="netflix-player d-none" id="modal-player">
+            <video id="modal-video" playsinline preload="metadata"></video>
+            <div class="np-spinner d-none" id="np-spinner" aria-hidden="true"><div class="spinner-border text-light" role="status"></div></div>
+            <div class="np-flash" id="np-flash" aria-hidden="true"></div>
+            <button type="button" class="np-center d-none" id="np-center" aria-label="Lecture / Pause"><i class="bi bi-play-fill" aria-hidden="true"></i></button>
+            <div class="np-error d-none" id="np-error" role="alert"><i class="bi bi-exclamation-triangle" aria-hidden="true"></i> Vidéo indisponible pour le moment.</div>
+            <div class="np-controls" id="np-controls">
+              <div class="np-progress" id="np-progress" role="slider" aria-label="Progression de la vidéo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                <div class="np-buffered" id="np-buffered"></div>
+                <div class="np-played" id="np-played"></div>
+                <div class="np-handle" id="np-handle"></div>
+              </div>
+              <div class="np-buttons">
+                <button type="button" class="np-btn" id="np-play" aria-label="Lecture / Pause"><i class="bi bi-play-fill" aria-hidden="true"></i></button>
+                <button type="button" class="np-btn" id="np-back" aria-label="Reculer de 10 secondes"><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i></button>
+                <button type="button" class="np-btn" id="np-forward" aria-label="Avancer de 10 secondes"><i class="bi bi-arrow-clockwise" aria-hidden="true"></i></button>
+                <button type="button" class="np-btn" id="np-mute" aria-label="Activer / couper le son"><i class="bi bi-volume-up-fill" aria-hidden="true"></i></button>
+                <input type="range" class="np-volume" id="np-volume" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+                <span class="np-time" id="np-time">0:00 / 0:00</span>
+                <span class="np-spacer"></span>
+                <button type="button" class="np-btn" id="np-fullscreen" aria-label="Plein écran"><i class="bi bi-fullscreen" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-cover" id="modal-cover"><i id="modal-cover-icon" class="bi bi-grid-1x2" aria-hidden="true"></i></div>
+          <p id="modal-description"></p>
+          <h4 class="modal-section-title">Problème</h4>
+          <p id="modal-problem"></p>
+          <h4 class="modal-section-title">Solution</h4>
+          <p id="modal-solution"></p>
+          <h4 class="modal-section-title">Architecture</h4>
+          <p id="modal-architecture"></p>
+          <h4 class="modal-section-title">Fonctionnalités clés</h4>
+          <ul class="modal-list" id="modal-features"></ul>
+          <h4 class="modal-section-title">Technologies</h4>
+          <div class="tech-pills" id="modal-tech"></div>
+          <h4 class="modal-section-title">Résultat</h4>
+          <p class="fw-semibold" id="modal-result" style="color: var(--color-accent);"></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline-custom" id="modal-github" rel="noopener"><i class="bi bi-github me-2"></i>Code source</a>
+          <a href="#" class="btn btn-primary-custom" id="modal-demo" rel="noopener"><i class="bi bi-box-arrow-up-right me-2"></i>Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a class="whatsapp-float" data-personal="whatsapp" href="https://wa.me/2250747085276/?text=Bonjour,%20comment%20allez-vous%20%3F" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+
+  <!-- Back to top -->
+  <button id="back-to-top" type="button" aria-label="Retour en haut de la page"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <!-- Bootstrap JS (bundle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Données puis logique applicative -->
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
