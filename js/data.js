@@ -2,11 +2,6 @@
    PORTFOLIO — DONNÉES CENTRALISÉES
    ----------------------------------------------------------------------------
    ★ FICHIER LE PLUS IMPORTANT POUR LA PERSONNALISATION ★
-
-   Modifiez TOUTES vos informations personnelles ici, sans toucher au HTML
-   ni à la logique JavaScript (app.js).
-
-   Priorité :  data.js  →  JavaScript  →  HTML
    ============================================================================ */
 
 const portfolioData = {
